@@ -1,3 +1,5 @@
+<img src="logo.png" width="96" align="right" alt="AnimeTrace">
+
 # 二次元角色识别（AnimeTrace）
 
 引用一张图片，回复 `anime` 就能识别出图中的动漫 / Galgame 角色。
@@ -37,7 +39,7 @@
 
 ## 说明
 
-- 数据来源：[AnimeTrace](https://ai.animetrace.com)（免费接口，无需 Key）
+- 数据来源：[AnimeTrace](https://www.animetrace.com/?nav=recognize)（免费接口，无需 Key）
 - 接口存在**使用上限**（错误码 `17728`）与**高峰限流**（`17731`），故内置冷却；若频繁触发请调大 `cooldown_seconds`
 - 官方提醒"可用模型会动态增减"，因此本插件**不写死模型名**，运行时向 `/v1/model/list` 获取
 - 图片读取支持 `http(s)`、`base64://`、`file://` 与本地路径
