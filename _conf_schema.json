@@ -1,0 +1,48 @@
+{
+    "trigger_words": {
+        "description": "触发词",
+        "hint": "引用图片后回复这些词即可识别；也可填多个用逗号分隔，例如 anime,动漫识别。默认 anime",
+        "type": "list",
+        "default": ["anime"]
+    },
+    "model": {
+        "description": "识别模型",
+        "hint": "留空则自动向官方获取当前启用的默认模型（推荐留空：官方会动态增删模型，写死会导致识别不可用）",
+        "type": "string",
+        "default": ""
+    },
+    "is_multi": {
+        "description": "返回多个候选",
+        "hint": "开启后会给出次要候选，难度高的图命中率更高",
+        "type": "bool",
+        "default": true
+    },
+    "ai_detect": {
+        "description": "AI 生成图检测",
+        "hint": "开启后在结果末尾提示该图是否疑似 AI 生成",
+        "type": "bool",
+        "default": true
+    },
+    "max_candidates": {
+        "description": "每个角色显示几个候选",
+        "type": "int",
+        "default": 3
+    },
+    "max_faces": {
+        "description": "最多显示几个检测框",
+        "hint": "图中有多个人物时，最多列出前几个",
+        "type": "int",
+        "default": 3
+    },
+    "cooldown_seconds": {
+        "description": "冷却时间（秒）",
+        "hint": "同一会话同一用户两次识别的最小间隔，防止刷接口撞到使用上限；0 表示不限制",
+        "type": "int",
+        "default": 5
+    },
+    "request_timeout": {
+        "description": "接口超时（秒）",
+        "type": "int",
+        "default": 40
+    }
+}
