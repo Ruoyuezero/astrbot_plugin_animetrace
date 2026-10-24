@@ -1,10 +1,10 @@
-name: astrbot_plugin_animetrace
+﻿name: astrbot_plugin_animetrace
 display_name: 二次元角色识别
 desc: "AnimeTrace 动漫 / Galgame 角色识别：引用一张图片回复 anime 即可，无需唤醒词。支持多候选、AI 生成图检测与冷却限流"
 help: "引用一张图片并回复 anime（可自定义触发词），即可识别图中的动漫或 Galgame 角色；也可以直接把图片和 anime 一起发送。数据来源 AnimeTrace"
 version: 1.0.0
 author: Seira
-repo: "https://github.com/ruoyuezero/astrbot_plugin_animetrace"
+repo: "https://github.com/Ruoyuezero/astrbot_plugin_animetrace"
 astrbot_version: ">=4.0.0"
 support_platforms:
   - aiocqhttp
